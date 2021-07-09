@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Charity from './components/Charity'
+import NavBar from './components/NavBar/NavBar'
+import RedCharity from './charities/redCharity'
+import GreenCharity from './charities/greenCharity'
+import BlueCharity from './charities/blueCharity';
+
+const charities = [RedCharity, GreenCharity, BlueCharity];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hey, bro.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="Startup">
+      <NavBar></NavBar>
+      <h1>Which Charity would you like to donate to?</h1>
+      <div className="flats">
+        {charities.map((charity) => {
+          return <Charity props={charity} />
+        })}
+      </div>
+    </div >
   );
 }
 
