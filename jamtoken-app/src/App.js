@@ -14,7 +14,7 @@ function App() {
       <h1>Which Charity would you like to donate to?</h1>
       <div className="flats">
         {charities.map((charity) => {
-          return <Charity props={charity} />
+          return <Charity {...charity} />
         })}
       </div>
     </div >
