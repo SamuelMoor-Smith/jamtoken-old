@@ -1,9 +1,10 @@
-import './css/CharityPage.css';
+import '../css/CharityPage.css';
 import Router from "./components/Router"
 
 function App() {
   return (
-    <div className="router">
+    <div className="Startup">
+        <h1>Hello this is the main page</h1>
         <Router />
     </div >
   );

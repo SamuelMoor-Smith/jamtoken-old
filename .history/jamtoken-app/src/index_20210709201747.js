@@ -1,0 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import CharityPage from './pages/CharityPage';
+
+// You can choose your kind of history here (e.g. browserHistory)
+import { Router} from 'react-router';
+// Your routes.js file
+import routes from './routes';
+
+ReactDOM.render(
+    <Router routes={routes} />,
+    document.getElementById('root')
+  );

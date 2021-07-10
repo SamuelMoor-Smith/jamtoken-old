@@ -3,7 +3,7 @@ import Router from "./components/Router"
 
 function App() {
   return (
-    <div className="router">
+    <div className="Startup">
         <Router />
     </div >
   );
